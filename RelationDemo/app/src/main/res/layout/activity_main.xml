@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.bmob.relationdemo.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/signUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="signUp"/>
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="login"/>
+
+            <Button
+                android:id="@+id/addOneToOneRelation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加一对一关联 ->  创建帖子 "/>
+
+            <Button
+                android:id="@+id/queryOneToOneRelation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查询一对一关联 -> 查询帖子"/>
+
+            <Button
+                android:id="@+id/updateOneToOneRelation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更新一对一关联 -> 更新帖子的作者"/>
+
+            <Button
+                android:id="@+id/delOneToOneRelation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="删除一对一关联 -> 删除帖子的author字段"/>
+
+            <Button
+                android:id="@+id/addOneToMoreRelation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加一对多关联 -> 给帖子加一个评论"/>
+
+            <Button
+                android:id="@+id/queryOneToMoreRelation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查询一对多关联 -> 查询帖子的评论"/>
+
+            <Button
+                android:id="@+id/addMoreToMoreRelation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加多对多关联 -> 给帖子加一个likes字段(喜欢这个帖子的用户)"/>
+
+            <Button
+                android:id="@+id/queryMoreToMoreRelation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查询多对多关联 -> 查询喜欢这个帖子的用户"/>
+
+            <Button
+                android:id="@+id/updateMoreToMoreRelation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更新多对多关联 -> 新增一个喜欢这个帖子的用户"/>
+
+            <Button
+                android:id="@+id/delMoreToMoreRelation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="删除多对多关联 -> 删除帖子的user字段(改用户不喜欢这个帖子了) "/>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
